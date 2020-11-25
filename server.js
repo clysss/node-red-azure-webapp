@@ -6,7 +6,7 @@ var RED=require('node-red');
 var app= express();
  var http=require('http');
 
-const PORT=443;
+const PORT=process.env.PORT||8000;
 
 var server=http.createServer(app);
 var settings=require("./settings.js");
