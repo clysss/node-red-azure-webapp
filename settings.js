@@ -5,7 +5,7 @@ module.exports = {
     
     userDir:"/home/nodered/.node-red/",
     // the tcp port that the Node-RED web server is listening on
-    uiPort: 443,
+    uiPort: process.env.PORT||8000,
 
     // By default, the Node-RED UI accepts connections on all IPv4 interfaces.
     // The following property can be used to listen on a specific interface. For
