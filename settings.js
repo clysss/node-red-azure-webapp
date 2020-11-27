@@ -194,15 +194,6 @@ module.exports = {
       projects:{
         enabled: true
       }
-    },
-    swagger: {
-        "template": {
-          "swagger": "2.0",
-          "info": {
-            "title": "Node-RED in Azure API",
-            "version": "0.0.1"
-          }
-        }
-      }
-
+    }
+    
 };
