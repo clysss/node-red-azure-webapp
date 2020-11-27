@@ -90,7 +90,7 @@
         "reserved": true,
         "numberOfWorkers": "1",
         "hostingEnvironment": "",
-        "name": "[parameters('hostingPlanName')]"
+        "name": "[variables('hostingPlanName')]"
       }
     },
     {
