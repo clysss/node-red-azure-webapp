@@ -1,6 +1,7 @@
+/*
 const {exec} = require('child_process');
-//var command='sh postinstall.sh';
-var command='';
+var command='sh postinstall.sh';
+
 
 
 const executedCommands = exec(command, (error, stdout) => {
@@ -9,3 +10,4 @@ const executedCommands = exec(command, (error, stdout) => {
         throw error;
     }
 });
+*/
