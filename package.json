@@ -31,8 +31,8 @@
   "author": "jmservera",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmservera/node-red-azure-webapp/issues"
+    "url": "https://github.com/clysss/node-red-azure-webapp/issues"
   },
-  "homepage": "https://github.com/jmservera/node-red-azure-webapp#readme",
+  "homepage": "git+ssh://git@github.com/clysss/node-red-azure-webapp.git#readme",
   "engines": {"node":">=12.15.0", "npm":">=6.13.4"}
 }
