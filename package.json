@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "node-red": "*",
-    "node-red-dashboard": "*"
+    "node-red-dashboard": "*",
+    "express": "*"
   },
   "devDependencies": {},
   "scripts": {
