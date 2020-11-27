@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A webapp wrapper for running node-red in an Azure Web App",
   "main": "server.js",
-  {
   "dependencies": {
     "node-red": "*",
     "node-red-dashboard": "*"
