@@ -78,17 +78,19 @@
     {
       "apiVersion": "2015-08-01",
       "name": "[variables('hostingPlanName')]",
-      "tags": {
-        "displayName": "hosting"
-      },
       "type": "Microsoft.Web/serverfarms",
+      "kind": "linux",
       "location": "[resourceGroup().location]",
       "sku": {
-        "name": "[parameters('sku')]",
-        "capacity": "[parameters('workerSize')]"
+        "Tier": "small",
+        "Name": "[parameters('sku')]"
       },
       "properties": {
-        "name": "[variables('hostingPlanName')]"
+        "workerSizeId": "[parameters('workerSize')]",
+        "reserved": true,
+        "numberOfWorkers": "1",
+        "hostingEnvironment": "",
+        "name": "[parameters('hostingPlanName')]"
       }
     },
     {
@@ -105,9 +107,10 @@
       "properties": {
         "serverFarmId": "[variables('hostingPlanName')]",
         "siteConfig": {
+          "linuxFxVersion": "NODE|10.10",
+          "appCommandLine": "/home/site/wwwroot/app.js",
           "webSocketsEnabled": true,
           "alwaysOn": "[variables('alwaysOnValue')[parameters('sku')]]",
-          "phpVersion":""
         }
       },
       "resources": [
