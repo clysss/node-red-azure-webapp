@@ -107,9 +107,9 @@
       "properties": {
         "serverFarmId": "[variables('hostingPlanName')]",
         "siteConfig": {
-          "linuxFxVersion": "NODE|10.10",
+          "linuxFxVersion": "NODE|12-lts",
           "webSocketsEnabled": true,
-          "alwaysOn": "[variables('alwaysOnValue')[parameters('sku')]]",
+          "alwaysOn": "[variables('alwaysOnValue')[parameters('sku')]]"
         }
       },
       "resources": [
