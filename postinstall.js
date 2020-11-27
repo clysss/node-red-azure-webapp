@@ -1,12 +1,7 @@
-//postinstall.cmd
-
 const {exec} = require('child_process');
-var command='sh postinstall.sh';
-if (process.platform == 'win32') {
-  command="postinstall.cmd";
-}
-else{
-}
+//var command='sh postinstall.sh';
+var command='';
+
 
 const executedCommands = exec(command, (error, stdout) => {
     console.log(stdout);
