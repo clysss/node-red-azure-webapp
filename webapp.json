@@ -108,7 +108,6 @@
         "serverFarmId": "[variables('hostingPlanName')]",
         "siteConfig": {
           "linuxFxVersion": "NODE|10.10",
-          "appCommandLine": "/home/site/wwwroot/app.js",
           "webSocketsEnabled": true,
           "alwaysOn": "[variables('alwaysOnValue')[parameters('sku')]]",
         }
