@@ -24,11 +24,22 @@
         "P3",
         "P4"
       ],
-      "defaultValue": "F1",
+      "defaultValue": "B1",
       "metadata": {
         "description": "The pricing tier for the hosting plan. For any tier >=B1 Always on will be activated."
       }
     },
+    
+    
+    	"linuxFxVersion": {
+			"type": "string",
+			"defaultValue": "NODE|12-lts",
+			"metadata": {
+				"description": "The Runtime stack of current web app"
+			}
+		},
+    
+    
     "workerSize": {
       "type": "string",
       "allowedValues": [
@@ -107,7 +118,7 @@
       "properties": {
         "serverFarmId": "[variables('hostingPlanName')]",
         "siteConfig": {
-          "linuxFxVersion": "NODE|12-lts",
+          "linuxFxVersion": "[parameters('linuxFxVersion')]",
           "webSocketsEnabled": true,
           "alwaysOn": "[variables('alwaysOnValue')[parameters('sku')]]"
         }
