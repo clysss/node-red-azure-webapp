@@ -2,10 +2,10 @@ var express = require("express");
 var RED=require('node-red');
 var app= express();
 var http=require('http');
-//var basicAuth = require('express-basic-auth')
-//app.use(basicAuth({
-//    users: { 'p': 'ppp' }, challenge: true, realm: 'Imb4T3st4pp', unauthorizedResponse: (req) => { return 'unauthorized.'}
-//}))
+var basicAuth = require('express-basic-auth')
+app.use(basicAuth({
+    users: { 'p': 'ppp' }, challenge: true, realm: 'Imb4T3st4pp', unauthorizedResponse: (req) => { return 'unauthorized.'}
+}))
 
 const PORT=process.env.PORT||8000;
 var server=http.createServer(app);
@@ -17,4 +17,3 @@ app.use(settings.httpNodeRoot,RED.httpNode);
 server.listen(settings.uiPort);
 console.log(`listening port:${settings.uiPort}`);
 RED.start();
-
