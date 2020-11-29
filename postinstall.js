@@ -1,4 +1,4 @@
-const {exec} = require('child_process');
+/*const {exec} = require('child_process');
 var command='sh postinstall.sh';
 
 
@@ -8,4 +8,4 @@ const executedCommands = exec(command, (error, stdout) => {
     if (error) {
         throw error;
     }
-});
+});*/
