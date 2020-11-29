@@ -10,7 +10,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "preinstall": "node preinstall.js",
     "postinstall": "node postinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
