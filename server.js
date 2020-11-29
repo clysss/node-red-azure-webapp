@@ -15,5 +15,5 @@ app.use(settings.httpAdminRoot,RED.httpAdmin);
 app.use(settings.httpNodeRoot,RED.httpNode);
 
 server.listen(settings.uiPort);
-console.log(`listening port:${settings.uiPort}`);
+console.log('listening port:${settings.uiPort}');
 RED.start();
