@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "preinstall": "node preinstall.js",
-    "postinstall": "node postinstall.js",
+    "preinstall": "sh ./preinstall.sh",
+    "postinstall": "sh ./postinstall.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
