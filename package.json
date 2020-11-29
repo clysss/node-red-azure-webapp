@@ -6,7 +6,8 @@
   "dependencies": {
     "node-red": "*",
     "node-red-dashboard": "*",
-    "express": "*"
+    "express": "*",
+    "express-basic-auth": "*"
   },
   "devDependencies": {},
   "scripts": {
