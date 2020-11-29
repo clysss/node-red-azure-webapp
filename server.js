@@ -1,3 +1,5 @@
+process.env.Path =  'D:\\Program Files\\Git\\cmd;D:\\Program Files\\Git\\usr\\bin;' + process.env.Path;
+
 var express = require("express");
 var RED=require('node-red');
 var app= express();
