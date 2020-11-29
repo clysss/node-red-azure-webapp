@@ -10,7 +10,9 @@
     "express-basic-auth": "*"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+   "postinstall": "sh ./postinstall.sh",  
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/clysss/node-red-azure-webapp.git"
