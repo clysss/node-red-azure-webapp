@@ -4,9 +4,29 @@
   "description": "A webapp wrapper for running node-red in an Azure Web App",
   "main": "server.js",
   "dependencies": {
-    "node-red": "^1.2.5",
-    "node-red-dashboard": "2.24.1",
-    "express": "~4.0.0", 
-    "express-basic-auth": "1.2.0"
+    "node-red": "*",
+    "node-red-dashboard": "*",
+    "express": "*"
   },
+  "devDependencies": {},
+  "scripts": {
+    "preinstall": "node preinstall.js",
+    "postinstall": "node postinstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/clysss/node-red-azure-webapp.git"
+  },
+  "keywords": [
+    "node-red",
+    "Azure"
+  ],
+  "author": "clysss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clysss/node-red-azure-webapp/issues"
+  },
+  "homepage": "git+ssh://git@github.com/clysss/node-red-azure-webapp.git#readme",
+  "engines": {"node":">=12.15.0", "npm":">=6.13.4"}
 }
