@@ -4,9 +4,9 @@
   "description": "A webapp wrapper for running node-red in an Azure Web App",
   "main": "server.js",
   "dependencies": {
-    "node-red": "^1.2.5",
-    "node-red-dashboard": "2.24.1",
-    "express": "~4.0.0"
+    "node-red": "*",
+    "node-red-dashboard": "*",
+    "express": "*"
   },
   "devDependencies": {},
   "scripts": {
