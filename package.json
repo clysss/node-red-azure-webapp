@@ -10,9 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "preinstall": "rm -rf ./node_modules ./package-lock.json && npm install",
-    "xxpostinstall": "sh ./postinstall.sh",
-    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "preinstall": "node preinstall.js",
+    "postinstall": "node postinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
