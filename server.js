@@ -4,7 +4,7 @@ var app= express();
 var http=require('http');
 var basicAuth = require('express-basic-auth')
 app.use(basicAuth({
-    users: { 'p': 'ppp' }, challenge: true, realm: 'Imb4T3st4pp', unauthorizedResponse: (req) => { return 'unauthorized.'}
+    users: { 'p': 'ppp' }, challenge: true, realm: 'NodeRedLogin', unauthorizedResponse: (req) => { return 'unauthorized.'}
 }))
 
 const PORT=process.env.PORT||8000;
