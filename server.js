@@ -2,10 +2,6 @@ var express = require("express");
 var RED=require('node-red');
 var app= express();
 var http=require('http');
-//var basicAuth = require('express-basic-auth')
-//app.use(basicAuth({
-//    users: { 'p': 'ppp' }, challenge: true, realm: 'NodeRedLogin', unauthorizedResponse: (req) => { return 'unauthorized.'}
-//}))
 
 const PORT=process.env.PORT||8000;
 var server=http.createServer(app);
