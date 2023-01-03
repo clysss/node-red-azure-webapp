@@ -4,6 +4,15 @@ module.exports = {
     ui: { path: "ui" },
     
     userDir:"/home/nodered/.node-red/",
+    
+    adminAuth: {
+        type: "credentials",
+        users: [{
+            username: "p",
+            password: "$2a$10$Zf/DaAXNxULWH25TERC.Z.Bcsfer2ujKSmMeUHku9weAk65ocnO9S",
+            permissions: "*"
+        }]
+    },
     // the tcp port that the Node-RED web server is listening on
     uiPort: process.env.PORT||8000,
 
