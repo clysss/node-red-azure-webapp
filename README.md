@@ -7,3 +7,18 @@ Deploy to Azure with this button:
 
 (postinstall.sh desactivé)
 ajouté chmod 777 -R dans le postinstall pour que l'installation d'autres packages depuis Node-red se passe correctement
+
+
+
+
+--21/12/24 : create webapp node 20
+# config deployment :
+Source
+External Git
+Repository
+https://github.com/clysss/node-red-azure-webapp.git
+Branch
+master (!! pas main!)
+
+# browse to
+xxx/red-admin
